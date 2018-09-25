@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Table Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Exo|Montserrat|Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1>Table Genrator</h1>
+    <div class="tableSettings container">
+      <div class="table-dimensions">
+        <label for="row-count">Enter number of rows:</label>
+        <input type="number" id="row-count" min="0">
+        <label for="col-count">Enter number of columns:</label>
+        <input type="number" id="col-count" min="0" max="20">
+        <label for="tab-width">Table width in percentage:</label>
+        <input type="number" min="50" max="100" id="tab-width">
+        <label for="border-width">Border width in pixels:</label>
+        <input type="number" id="border-width">
+      </div>
+      <div class="tableColors">
+        <label for="tableBg">Table background</label>
+        <input type="color" id="tableBg" onchange="backgroundColor()">
+        <label for="headerBg">Header background</label>
+        <input type="color" id="headerBg" onchange="headerColor()">
+        <label for="fontColor">Font color</label>
+        <input type="color" id="fontColor" onchange="fontColor()">
+        <label for="bodyBg">Body background</label>
+        <input type="color" id="bodyBg" onchange="bodyColor()">
+        <label for="borderColor">Border color</label>
+        <input type="color" id="borderColor" onchange="borderColor()">
+
+      </div>
+      <div class="typesetting">
+        <label for="font">Font type</label>
+        <select name="font" id="font" onchange="fontType()">
+          <option value="Roboto">Roboto</option>
+          <option value="Montserrat">Montserrat</option>
+          <option value="Exo">Exo</option>
+        </select>
+        <select name="weight" id="weight" onchange="fontWeight()">
+          <option value="normal">100</option>
+          <option value="bold">400</option>
+          <option value="700">700</option>
+          <option value="900">900</option>
+        </select>
+        <label for="align">Text Align</label>
+        <select name="align" id="align" onchange="alignment()">
+          <option value="center">center</option>
+          <option value="left">left</option>
+          <option value="right">right</option>
+        </select>
+        <button class="button" id="generate">Generate</button>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="table-div">
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

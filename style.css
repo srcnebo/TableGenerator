@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background: #3cba54;
+  padding: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #4885ed;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  /* font-family: 'Montserrat', sans-serif;
+font-family: 'Exo', sans-serif; */
+}
+
+.button {
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  color: #ffffff;
+  border: #888888;
+  background-image: linear-gradient(to bottom, #ce3c02, #801e00);
+}
+
+.table-dimensions {
+  display: grid;
+  grid-gap: 4px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.container {
+  width: 98%;
+  min-width: 760px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.tableColors {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto;
+  width: 580px;
+  grid-row-gap: 2px;
+  grid-column-gap: 5px;
+  justify-items: right;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.typesetting {
+  display: flex;
+  justify-content: space-around;
+  width: 440px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* th {
+  padding: 10px 15px;
+} */
+
+td {
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.table-div {
+  max-width: 1200px;
+  margin: auto;
+}
+
+table {
+  margin: auto;
+}
